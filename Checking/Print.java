@@ -1,8 +1,8 @@
 
-public class Print{
+public class Print {
     public static void main(String args[]) {
-    
-System.out.println("This is Java Print");
-}
+
+        System.out.println("This is Java Print");
+    }
 
 }
