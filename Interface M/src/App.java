@@ -28,7 +28,7 @@ class Myclass1 implements myinterface {
 
 }
 
-class Myclass2 implements myinterface{
+class Myclass2 extends Myclass1{
     public void m2(){
         System.out.println("I am in M2 of Myclass2");
     }
@@ -36,6 +36,12 @@ class Myclass2 implements myinterface{
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Myclass1 ob1 = new Myclass1();
+        ob1.m1();
+        ob1.m2();
+        ob1.m3();
+        ob1.m4();
+        Myclass2 ob2 = new Myclass2();
+        ob2.m2();
     }
 }
